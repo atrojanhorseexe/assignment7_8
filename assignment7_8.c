@@ -220,8 +220,8 @@ void addEmployee(char* employeeNameInput, unsigned int roomNumInput)
 				strcpy(tempEmployee->name, employeeNameInput);
 				tempEmployee->roomNumber = roomNumInput;
 					//create structure for node inside employee struct
-						struct supervisor* tempsupervisor = (struct supervisor*)malloc(sizeof(struct supervisor));
-						tempemployeeNode->tempEmployee->supervisors = tempsupervisor;
+						tempsupervisor = (struct supervisor*)malloc(sizeof(struct supervisor));
+						tempemployeeNode->employee->supervisors = tempsupervisor;
 							
 							strcpy(tempsupervisor->name,"");
 							tempsupervisor->next = NULL;			//as requested, set next pointer to NULL till hw8
